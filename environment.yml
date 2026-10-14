@@ -1,0 +1,20 @@
+name: cts2000
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy<2
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - networkx
+  - ipykernel
+  - hdbscan
+  - umap-learn
+  - pip:
+      - torch==2.2.2
+      - transformers<4.45
+      - sentence-transformers
+      - stanza
+      - bertopic
