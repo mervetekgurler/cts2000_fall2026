@@ -18,3 +18,4 @@ dependencies:
       - sentence-transformers
       - stanza
       - bertopic
+      - nltk
