@@ -4,15 +4,22 @@ channels:
 dependencies:
   - python=3.11
   - pip
-  - numpy<2
+  - numpy<2                # torch 2.2.2 needs numpy 1.x
   - pandas
   - matplotlib
+  - seaborn
+  - plotly
+  - requests
+  - ipywidgets
+  - lxml
   - scikit-learn
   - networkx
   - ipykernel
   - hdbscan
-  - umap-learn
+  - umap-learn<0.6         # 0.6 needs numpy 2
   - pip:
+      - numpy<2            # pip ignores the conda pin, so we repeat it here
+      - pynndescent<0.7    # 0.7 pulls in numpy 2
       - torch==2.2.2
       - transformers<4.45
       - sentence-transformers
