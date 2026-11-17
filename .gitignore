@@ -1,3 +1,4 @@
 .DS_Store
 *.pkl
 *.pickle
+/units/week_8/8-2_data_viz.ipynb
